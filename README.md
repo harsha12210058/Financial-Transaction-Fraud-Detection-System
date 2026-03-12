@@ -229,6 +229,27 @@ Fraudulent Transaction Detected
 
 <img width="1463" height="1029" alt="Fraud" src="https://github.com/user-attachments/assets/d31c84c4-5153-4d51-bc76-08e7803708c0" />
 
+## Project Structure
+
+Financial-Transaction-Fraud-Detection-System
+│
+├── images
+│   ├── confusion_matrix.png
+│   ├── feature_importance.png
+│   ├── fraud_by_type.png
+│   ├── precision_recall_curve.png
+│   ├── shap_summary.png
+│
+├── app_images
+│   ├── legitimate_transaction.png
+│   └── fraud_detected.png
+│
+├── Fraud_Detection.ipynb
+├── app.py
+├── fraud_model.pkl
+├── model_features.pkl
+├── requirements.txt
+└── README.md
 
 # Technology Stack
 
