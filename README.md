@@ -1,6 +1,6 @@
 # Financial-Transaction-Fraud-Detection-System
 
-Machine Learning | Fraud Detection | Streamlit Deployment
+Machine Learning | Fraud Detection | Streamlit Deployment | Explainable AI
 
 A machine learning system designed to detect fraudulent financial transactions using transactional and behavioral features.
 The project includes data analysis, feature engineering, model training, evaluation, and deployment using Streamlit for real-time fraud prediction.
@@ -74,7 +74,22 @@ isFlaggedFraud	- Flagged fraud indicator
 
 The dataset is highly imbalanced, where fraudulent transactions represent a very small percentage of total transactions.
 
-**Exploratory Data Analysis (EDA)**
+## Machine Learning Pipeline
+
+1. Data preprocessing
+
+2. Feature engineering
+
+3. Handling class imbalance using SMOTE
+
+4. Training multiple machine learning models
+
+5. Model evaluation and comparison
+
+6. Deployment using Streamlit
+
+
+# Exploratory Data Analysis (EDA)
 
 EDA was performed to understand transaction behavior and fraud patterns.
 
@@ -91,19 +106,19 @@ Several additional features were created to improve fraud detection performance.
 
 Engineered features include:
 
-origin_balance_error
+• origin_balance_error
 
-destination_balance_error
+• destination_balance_error
 
-amount_balance_ratio
+• amount_balance_ratio
 
-account_emptied
+• account_emptied
 
-receiver_balance_jump
+• receiver_balance_jump
 
-large_transaction
+• large_transaction
 
-risk_score
+• risk_score
 
 These features capture abnormal transaction patterns commonly seen in fraudulent activity.
 
@@ -123,21 +138,21 @@ This improves the model's ability to detect fraud cases.
 
 Three models were trained and compared:
 
-Logistic Regression
+• Logistic Regression
 
-Random Forest
+• Random Forest
 
-XGBoost
+• XGBoost
 
 Evaluation metrics used:
 
-Precision
+• Precision
 
-Recall
+• Recall
 
-F1 Score
+• F1 Score
 
-ROC-AUC Score
+• ROC-AUC Score
 
 
 # Model Performance
@@ -157,6 +172,19 @@ Random Forest	~0.999
 XGBoost	~0.999
 
 <img width="231" height="121" alt="image" src="https://github.com/user-attachments/assets/e11aa3f6-59b8-41b8-8bbf-57ddfdd23fa7" />
+
+
+## Key Results
+
+• Dataset Size: 6.3 Million Transactions  
+
+• Fraud Cases: ~8,213  
+
+• Best Model: Random Forest  
+
+• ROC-AUC Score: ~0.999  
+
+• Deployment: Streamlit Web Application
 
 
 # Confusion Matrix
@@ -192,13 +220,13 @@ Feature importance analysis helps understand which variables contribute most to 
 
 Top contributing features include:
 
-origin_balance_error
+• origin_balance_error
 
-amount_balance_ratio
+• amount_balance_ratio
 
-amount_exceeds_balance
+• amount_exceeds_balance
 
-newbalanceOrig
+• newbalanceOrig
 
 
 # Model Explainability (SHAP)
@@ -231,25 +259,8 @@ Fraudulent Transaction Detected
 
 ## Project Structure
 
-Financial-Transaction-Fraud-Detection-System
-│
-├── images
-│   ├── confusion_matrix.png
-│   ├── feature_importance.png
-│   ├── fraud_by_type.png
-│   ├── precision_recall_curve.png
-│   ├── shap_summary.png
-│
-├── app_images
-│   ├── legitimate_transaction.png
-│   └── fraud_detected.png
-│
-├── Fraud_Detection.ipynb
-├── app.py
-├── fraud_model.pkl
-├── model_features.pkl
-├── requirements.txt
-└── README.md
+<img width="509" height="510" alt="image" src="https://github.com/user-attachments/assets/0c430e77-cf62-4de1-9f13-aed12c2c05b4" />
+
 
 # Technology Stack
 
@@ -276,18 +287,16 @@ SHAP
 
 Possible improvements include:
 
-Deep learning models for fraud detection
+• Deep learning models for fraud detection
 
-Real-time transaction streaming
+• Real-time transaction streaming
 
-Advanced anomaly detection techniques
+• Advanced anomaly detection techniques
 
-Model monitoring and drift detection
+• Model monitoring and drift detection
 
-API deployment for integration with banking systems
+• API deployment for integration with banking systems
 
 # Author
 
 **Harsha Vardhan**
-
-Machine Learning | Data Science | Fraud Detection
