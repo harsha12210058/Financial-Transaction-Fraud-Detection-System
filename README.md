@@ -1,24 +1,35 @@
 # Financial-Transaction-Fraud-Detection-System
+
 Machine Learning | Fraud Detection | Streamlit Deployment
 
 A machine learning system designed to detect fraudulent financial transactions using transactional and behavioral features.
 The project includes data analysis, feature engineering, model training, evaluation, and deployment using Streamlit for real-time fraud prediction.
 
+
 # Live Demo
 Streamlit Web Application
+
 https://financial-transaction-fraud-detection-system.streamlit.app/
+
 Users can input transaction details and instantly check whether the transaction is fraudulent.
+
 
 # Problem Statement
 
 Financial fraud is one of the biggest challenges in digital banking and online payment systems. Fraudulent transactions cause billions of dollars in losses annually.
+
 This project aims to build a **machine learning model capable of identifying suspicious transactions based on transaction behavior and financial patterns.**
 
 The system analyzes factors such as:
+
 Transaction type
+
 Transaction amount
+
 Sender balance
+
 Receiver balance
+
 Transaction timing
 
 
@@ -29,38 +40,49 @@ The dataset contains 6.3 million financial transactions simulating real-world ba
 It includes both legitimate and fraudulent transactions and is highly imbalanced, as fraudulent transactions represent only a very small portion of the total dataset.
 
 **Dataset Size**
+
 **Attribute**	               **Value**
+
 Total Rows            	 6,362,620
+
 Total Features          	11
+
 Fraud Transactions	     ~8,213
+
 Legitimate Transactions	~6.35 million
-Dataset Columns
-Column	Description
-step	Time step of transaction
-type	Transaction type
-amount	Transaction amount
-oldbalanceOrg	Sender balance before transaction
-newbalanceOrig	Sender balance after transaction
-oldbalanceDest	Receiver balance before transaction
-newbalanceDest	Receiver balance after transaction
-isFraud	Fraud label (1 = Fraud, 0 = Legitimate)
-isFlaggedFraud	Flagged fraud indicator
+
+**Dataset Columns**
+
+step - Time step of transaction
+
+type - Transaction type
+
+amount - Transaction amount
+
+oldbalanceOrg	- Sender balance before transaction
+
+newbalanceOrig	- Sender balance after transaction
+
+oldbalanceDest	- Receiver balance before transaction
+
+newbalanceDest	 -Receiver balance after transaction
+
+isFraud	- Fraud label (1 = Fraud, 0 = Legitimate)
+
+isFlaggedFraud	- Flagged fraud indicator
+
 
 The dataset is highly imbalanced, where fraudulent transactions represent a very small percentage of total transactions.
 
-Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)**
 
 EDA was performed to understand transaction behavior and fraud patterns.
 
 Fraud Transactions by Type
 
-Upload screenshot here:
+**images/fraud_by_type.png**
 
-images/fraud_by_type.png
-
-(Use your notebook graph showing fraud transactions by type)
-
-Feature Engineering
+# Feature Engineering
 
 Several additional features were created to improve fraud detection performance.
 
@@ -82,17 +104,19 @@ risk_score
 
 These features capture abnormal transaction patterns commonly seen in fraudulent activity.
 
-Handling Imbalanced Data
 
-Fraud datasets are typically highly imbalanced.
+# Handling Imbalanced Data
+
+Fraud datasets are typically **highly imbalanced.**
 
 To address this problem:
 
-SMOTE (Synthetic Minority Oversampling Technique) was applied to balance the dataset.
+**SMOTE (Synthetic Minority Oversampling Technique)** was applied to balance the dataset.
 
 This improves the model's ability to detect fraud cases.
 
-Machine Learning Models
+
+# Machine Learning Models
 
 Three models were trained and compared:
 
@@ -112,30 +136,29 @@ F1 Score
 
 ROC-AUC Score
 
-Model Performance
+
+# Model Performance
 
 After comparing all models:
 
-Random Forest achieved the best performance and was selected as the final model.
+Random Forest achieved the **best performance** and was selected as the final model.
 
 Example evaluation metrics:
 
 Model	ROC-AUC
+
 Logistic Regression	~0.99
+
 Random Forest	~0.999
+
 XGBoost	~0.999
 
-Upload screenshot here:
 
-images/model_comparison.png
+# Confusion Matrix
 
-(Your model comparison table screenshot)
+**images/confusion_matrix.png**
+<img width="231" height="121" alt="image" src="https://github.com/user-attachments/assets/e11aa3f6-59b8-41b8-8bbf-57ddfdd23fa7" />
 
-Confusion Matrix
-
-Upload screenshot here:
-
-images/confusion_matrix.png
 
 This visualization shows how well the model distinguishes between:
 
