@@ -4,43 +4,47 @@ Machine Learning | Fraud Detection | Streamlit Deployment
 A machine learning system designed to detect fraudulent financial transactions using transactional and behavioral features.
 The project includes data analysis, feature engineering, model training, evaluation, and deployment using Streamlit for real-time fraud prediction.
 
-Live Demo
-
+# Live Demo
 Streamlit Web Application
-
 https://financial-transaction-fraud-detection-system.streamlit.app/
-
 Users can input transaction details and instantly check whether the transaction is fraudulent.
-Problem Statement
+
+# Problem Statement
 
 Financial fraud is one of the biggest challenges in digital banking and online payment systems. Fraudulent transactions cause billions of dollars in losses annually.
-
-This project aims to build a machine learning model capable of identifying suspicious transactions based on transaction behavior and financial patterns.
+This project aims to build a **machine learning model capable of identifying suspicious transactions based on transaction behavior and financial patterns.**
 
 The system analyzes factors such as:
-
 Transaction type
-
 Transaction amount
-
 Sender balance
-
 Receiver balance
-
 Transaction timing
 
-Dataset
 
-The dataset contains financial transaction records with the following attributes:
+# Dataset
 
-Feature	Description
+The dataset contains 6.3 million financial transactions simulating real-world banking transaction behavior.
+
+It includes both legitimate and fraudulent transactions and is highly imbalanced, as fraudulent transactions represent only a very small portion of the total dataset.
+
+**Dataset Size**
+**Attribute**	               **Value**
+Total Rows            	 6,362,620
+Total Features          	11
+Fraud Transactions	     ~8,213
+Legitimate Transactions	~6.35 million
+Dataset Columns
+Column	Description
+step	Time step of transaction
 type	Transaction type
 amount	Transaction amount
 oldbalanceOrg	Sender balance before transaction
 newbalanceOrig	Sender balance after transaction
 oldbalanceDest	Receiver balance before transaction
 newbalanceDest	Receiver balance after transaction
-isFraud	Fraud label
+isFraud	Fraud label (1 = Fraud, 0 = Legitimate)
+isFlaggedFraud	Flagged fraud indicator
 
 The dataset is highly imbalanced, where fraudulent transactions represent a very small percentage of total transactions.
 
