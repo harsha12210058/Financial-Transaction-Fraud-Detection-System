@@ -74,7 +74,7 @@ isFlaggedFraud	- Flagged fraud indicator
 
 The dataset is highly imbalanced, where fraudulent transactions represent a very small percentage of total transactions.
 
-## Machine Learning Pipeline
+# Machine Learning Pipeline
 
 1. Data preprocessing
 
@@ -174,7 +174,7 @@ XGBoost	~0.999
 <img width="231" height="121" alt="image" src="https://github.com/user-attachments/assets/e11aa3f6-59b8-41b8-8bbf-57ddfdd23fa7" />
 
 
-## Key Results
+# Key Results
 
 • Dataset Size: 6.3 Million Transactions  
 
@@ -257,7 +257,7 @@ Fraudulent Transaction Detected
 
 <img width="1463" height="1029" alt="Fraud" src="https://github.com/user-attachments/assets/d31c84c4-5153-4d51-bc76-08e7803708c0" />
 
-## Project Structure
+# Project Structure
 
 <img width="509" height="510" alt="image" src="https://github.com/user-attachments/assets/0c430e77-cf62-4de1-9f13-aed12c2c05b4" />
 
