@@ -82,6 +82,9 @@ Fraud Transactions by Type
 
 **images/fraud_by_type.png**
 
+<img width="663" height="490" alt="image" src="https://github.com/user-attachments/assets/d1de2d7a-9556-48a0-8b22-f988910e0358" />
+
+
 # Feature Engineering
 
 Several additional features were created to improve fraud detection performance.
@@ -153,11 +156,14 @@ Random Forest	~0.999
 
 XGBoost	~0.999
 
+<img width="231" height="121" alt="image" src="https://github.com/user-attachments/assets/e11aa3f6-59b8-41b8-8bbf-57ddfdd23fa7" />
+
 
 # Confusion Matrix
 
 **images/confusion_matrix.png**
-<img width="231" height="121" alt="image" src="https://github.com/user-attachments/assets/e11aa3f6-59b8-41b8-8bbf-57ddfdd23fa7" />
+
+<img width="559" height="382" alt="image" src="https://github.com/user-attachments/assets/b74fb5e4-042e-4bcb-beed-be473f4c7238" />
 
 
 This visualization shows how well the model distinguishes between:
@@ -166,21 +172,23 @@ Legitimate transactions
 
 Fraudulent transactions
 
-Precision-Recall Curve
 
-Upload screenshot here:
+# Precision-Recall Curve
 
-images/precision_recall_curve.png
+**images/precision_recall_curve.png**
+<img width="767" height="508" alt="image" src="https://github.com/user-attachments/assets/96e80468-16bb-4d96-ac14-ae953c5ebe73" />
+
 
 This curve is particularly important for imbalanced datasets like fraud detection.
 
-Feature Importance
+
+# Feature Importance
 
 Feature importance analysis helps understand which variables contribute most to fraud detection.
 
-Upload screenshot here:
+**images/feature_importance.png**
 
-images/feature_importance.png
+<img width="1023" height="533" alt="image" src="https://github.com/user-attachments/assets/3e69e993-fb7e-40dd-bd11-021a2e1ede5d" />
 
 Top contributing features include:
 
@@ -192,44 +200,58 @@ amount_exceeds_balance
 
 newbalanceOrig
 
-Model Explainability (SHAP)
+
+# Model Explainability (SHAP)
 
 SHAP values were used to explain the contribution of each feature toward fraud prediction.
 
-Upload screenshot here:
+**images/shap_summary.png**
 
-images/shap_summary.png
+<img width="584" height="654" alt="image" src="https://github.com/user-attachments/assets/5dd6e0f3-6387-4c74-808e-c1f3316072eb" />
 
 This helps make the model more interpretable and transparent.
 
-Web Application
+
+# Web Application
 
 The trained model was deployed using Streamlit to allow real-time fraud detection.
 
 Users enter transaction details and receive immediate predictions.
 
-Upload screenshot here:
-
-images/streamlit_app.png
-
 Example output:
 
 Legitimate Transaction
 
+<img width="1907" height="1003" alt="not fraud (Legitimate Transaction)" src="https://github.com/user-attachments/assets/40f46cd7-7522-455c-b2cc-d439b49b2a75" />
+
+
 Fraudulent Transaction Detected
 
-Technology Stack
+<img width="1463" height="1029" alt="Fraud" src="https://github.com/user-attachments/assets/d31c84c4-5153-4d51-bc76-08e7803708c0" />
+
+
+# Technology Stack
 
 Python
+
 Pandas
+
 NumPy
+
 Scikit-learn
+
 XGBoost
+
 Streamlit
+
 Matplotlib
+
 Seaborn
+
 SHAP
-Future Improvements
+
+
+# Future Improvements
 
 Possible improvements include:
 
@@ -243,8 +265,8 @@ Model monitoring and drift detection
 
 API deployment for integration with banking systems
 
-Author
+# Author
 
-Harsha Vardhan
+**Harsha Vardhan**
 
 Machine Learning | Data Science | Fraud Detection
