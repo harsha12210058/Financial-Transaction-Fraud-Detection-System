@@ -1,6 +1,6 @@
 # Financial-Transaction-Fraud-Detection-System
 
-Machine Learning | Fraud Detection | Streamlit Deployment | Explainable AI
+Python | Scikit-Learn | XGBoost | Streamlit | SHAP
 
 A machine learning system designed to detect fraudulent financial transactions using transactional and behavioral features.
 The project includes data analysis, feature engineering, model training, evaluation, and deployment using Streamlit for real-time fraud prediction.
@@ -34,6 +34,8 @@ Transaction timing
 
 
 # Dataset
+
+Dataset Source: Synthetic Financial Dataset
 
 The dataset contains 6.3 million financial transactions simulating real-world banking transaction behavior.
 
@@ -300,3 +302,5 @@ Possible improvements include:
 # Author
 
 **Harsha Vardhan**
+
+**Machine Learning | Data Science | Fraud Detection**
